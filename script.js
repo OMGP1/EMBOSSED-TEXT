@@ -1,3 +1,4 @@
+// Handle Image Upload
 document.getElementById("imageUpload").addEventListener("change", function(event) {
     const file = event.target.files[0];
     if (file) {
@@ -9,6 +10,8 @@ document.getElementById("imageUpload").addEventListener("change", function(event
     }
 });
 
-document.getElementById("textInput").addEventListener("input", function() {
-    document.getElementById("previewText").textContent = this.value || "Embossed Text";
-});
+// Handle Text Change
+function updateText() {
+    let userText = document.getElementById("textInput").value;
+    document.getElementById("previewText").textContent = userText || "Embossed Text";
+}
