@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embossed Text Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+    <title>Embossed Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="embossed-text">Embossed Text</div>
+    <div class="controls">
+        <input type="file" id="imageUpload" accept="image/*">
+        <input type="text" id="textInput" placeholder="Enter your text">
     </div>
+    
+    <div class="container">
+        <div class="embossed-text" id="previewText">Embossed Text</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
